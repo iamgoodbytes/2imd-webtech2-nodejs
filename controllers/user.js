@@ -14,3 +14,11 @@ function create (req, res){
 	});
 }
 module.exports.create = create;
+
+function getAll (req, res) {
+	Message.find( function(err, messages){
+		if (err) return console.error(err);
+		res.send(messages);
+	});
+}
+module.exports.getAll = getAll;
