@@ -23,8 +23,6 @@ router.get('/:id', function (req, res) {
 });
 
 router.post('/', function (req, res){
-	
-	
 
 	// so that we can save a new instance of this model
 	var newMessage = new Message({
